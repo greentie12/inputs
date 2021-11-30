@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="pull-down">
+        <p>Click the button to choose your food preference</p>
+        <button id="drop-btn">Click to display</button>
+        <div class="menu">
+          <ul id="menu-ul" class="hide">
+            <li>Vegan</li>
+            <li>Vegetarian</li>
+            <li>Pescatarian</li>
+            <li>No Preference</li>
+          </ul>
+        </div>
+
+        <textarea name="drop-text" id="drop-text"></textarea>
+      </div>
+
+      <div class="color-div">
+        <p>Click the button to change the background color</p>
+        <button id="color-btn">Change Background Color</button>
+      </div>
+
+      <div id="text-div">
+        <label for="text-screen">Type something</label>
+        <input type="text" id="text-screen" />
+        <button class="text-submit" type="submit">Submit</button>
+        <textarea name="display" id="display"></textarea>
+      </div>
+
+      <div id="radio-div">
+        <p>Select your favorite season</p>
+        <div class="radio-container">
+          <input type="radio" name="season" id="winter" value="Winter" />
+          <label for="winter">Winter</label>
+          <input type="radio" name="season" id="spring" value="Spring" />
+          <label for="spring">Spring</label>
+          <input type="radio" name="season" id="summer" value="Summer" />
+          <label for="summer">Summer</label>
+          <input type="radio" name="season" id="autumn" value="Autumn" />
+          <label for="autumn">Autumn</label>
+        </div>
+        <button class="radio-submit" type="submit">Submit</button>
+
+        <textarea name="radio-display" id="radio-display"></textarea>
+      </div>
+
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
+        <div class="gender-radio">
+          <input type="radio" name="gender" id="male" value="Male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="Female" />
+          <label for="female">Female</label>
+          <input
+            type="radio"
+            name="gender"
+            id="prefer"
+            value="Prefer Not To Say"
+          />
+          <label for="prefer">Prefer not to say</label>
+        </div>
+
+        <label for="comments">Comments Below</label>
+        <textarea name="comments" id="comments"></textarea>
+        <button type="submit">Submit Form</button>
+        <div id="form-result"></div>
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
